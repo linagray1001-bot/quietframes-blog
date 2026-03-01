@@ -1,15 +1,21 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "QuietFrames"
-paginate = 15
 enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 15
+
 [params]
   description = "Minimal anime reviews and thoughts"
   author = "QuietFrames Team"
+
 [outputs]
   home = ["HTML", "RSS"]
+
 [sitemap]
   changefreq = "daily"
   priority = 0.8
+
 [markup.goldmark.renderer]
   unsafe = true
